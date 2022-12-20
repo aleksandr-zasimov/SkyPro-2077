@@ -7,17 +7,12 @@ body {
 }
 
 .container {
-  max-width: 1230px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: calc(50% - 590px);
+  padding-right: calc(50% - 590px);
 }
 
 .header {
-  justify-content: space-between;
-  align-items: center;
-
-  min-height: 1024px;
-  padding: 0 120px;
+  min-height: 100vh;
 
   background-size: cover;
   background-position: center;
@@ -36,6 +31,7 @@ body {
   &__welcome {
     margin-bottom: 44px;
 
+    font-weight: 300;
     font-size: 18px;
     line-height: 32px;
     color: #FFFFFF;
@@ -54,21 +50,15 @@ body {
   }
 }
 
-.main {
-  justify-content: space-between;
-  align-items: center;
-
-  min-height: 556px;
-  padding: 0 120px;
-
-  background-color: #000915;
-}
-
 .cards {
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
     padding: 128px 0;
-
-    display: flex;
+    background-color: #000915;
 
   &__game {
     position: relative;
@@ -77,7 +67,6 @@ body {
   &__img {
     width: 378px;
     height: 300px;
-    object-fit: contain;
 
     border-radius: 16px;
   }
@@ -91,5 +80,48 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .header,
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header {
+    &__title {
+      padding-top: 239px;
+      
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+    }
+
+    &__welcome {
+      margin-bottom: 32px;
+
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    &__button {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .cards {
+    &__img {
+      width: 343px;
+      height: 300px;
+    }
+
+    &__title {
+      left: 32px;
+    }
   }
 }
