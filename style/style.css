@@ -39,9 +39,12 @@ body {
   color: #FFFFFF;
   background-color: #9C0332;
   border-radius: 30px;
+  transition: background-color 0.5s;
 }
-
-.cards {
+.header__button:hover {
+  background-color: #EB443F;
+}
+.header .cards {
   align-items: center;
   min-height: 100vh;
   display: flex;
@@ -51,15 +54,19 @@ body {
   padding: 128px 0;
   background-color: #000915;
 }
-.cards__game {
+.header .cards__game {
   position: relative;
 }
-.cards__img {
+.header .cards__img {
   width: 378px;
   height: 300px;
   border-radius: 16px;
 }
-.cards__title {
+.header .cards__img:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+}
+.header .cards__title {
   position: absolute;
   left: 32px;
   bottom: 32px;
@@ -68,34 +75,33 @@ body {
   line-height: 32px;
   color: #FFFFFF;
 }
-
 @media (max-width: 767px) {
-  .header,
-.container {
+  .header .header,
+.header .container {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .header__title {
+  .header .header__title {
     padding-top: 239px;
     font-size: 32px;
     line-height: 39px;
     text-align: center;
   }
-  .header__welcome {
+  .header .header__welcome {
     margin-bottom: 32px;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
   }
-  .header__button {
+  .header .header__button {
     margin: 0 auto;
     display: block;
   }
-  .cards__img {
+  .header .cards__img {
     width: 343px;
     height: 300px;
   }
-  .cards__title {
+  .header .cards__title {
     left: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
