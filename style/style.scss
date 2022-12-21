@@ -52,6 +52,7 @@ body {
   &:hover {
     background-color: #EB443F;
   }
+  }
 }
 
 .cards {
@@ -74,6 +75,8 @@ body {
 
     border-radius: 16px;
 
+    transition: border 0.5s;
+
     &:hover {
       border: 3px solid #44D2FF;
       border-radius: 16px;
@@ -81,18 +84,17 @@ body {
   }
 
   &__title {
-  position: absolute;
-  left: 32px;
-  bottom: 32px;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
 
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
   }
 }
-
-
+  
 @media (max-width: 767px) {
   .header,
   .container {
@@ -133,5 +135,4 @@ body {
       left: 32px;
     }
   }
-}
 }
