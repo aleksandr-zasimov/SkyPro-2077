@@ -78,6 +78,40 @@ body {
   color: #FFFFFF;
 }
 
+.games {
+  background-color: #000915;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.games__box {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 282px 0;
+}
+
+.games__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  color: #FFFFFF;
+}
+
+.games__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.games__img {
+  width: 485px;
+}
+
 @media (max-width: 767px) {
   .header,
 .container {
@@ -106,5 +140,24 @@ body {
   }
   .cards__title {
     left: 32px;
+  }
+  .games__box {
+    padding-top: 51px;
+    padding-bottom: 64px;
+    text-align: center;
+  }
+  .games__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    justify-content: center;
+  }
+  .games__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .games__img {
+    padding-bottom: 85px;
   }
 }/*# sourceMappingURL=style.css.map */
