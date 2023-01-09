@@ -18,3 +18,22 @@ function season () {
 }
 
 season ();
+
+function fruits() {
+  let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  arr = arr.sort(() => Math.random() - 0.5);
+  alert(arr);
+
+  let firstElement = prompt('Введите первый элемент');
+  let lastElement = prompt('Введите второй элемент');
+  
+  if (firstElement === arr[0] && lastElement === arr[arr.length - 1]) {
+    alert('Молодец угадал!');
+  } else if (firstElement === arr[0] || lastElement === arr[arr.length - 1]) {
+    alert('Вы были близки к победе!');
+  } else {
+    alert('Не угадал!')
+  }
+}
+
+fruits ();
