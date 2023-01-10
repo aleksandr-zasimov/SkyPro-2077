@@ -17,8 +17,6 @@ function season () {
   }
 }
 
-season ();
-
 function fruits() {
   let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
   arr = arr.sort(() => Math.random() - 0.5);
@@ -35,5 +33,3 @@ function fruits() {
     alert('Не угадал!')
   }
 }
-
-fruits ();

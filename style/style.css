@@ -47,7 +47,6 @@ body {
 
 .cards {
   align-items: center;
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -112,6 +111,22 @@ body {
   width: 485px;
 }
 
+.words {
+  background-color: #000915;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.words__img {
+  padding: 239px 0;
+}
+.words__box {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
 @media (max-width: 767px) {
   .header,
 .container {
@@ -156,8 +171,34 @@ body {
     font-weight: 300;
     font-size: 14px;
     line-height: 22px;
+    padding: 0 16px;
+  }
+  .games__text br {
+    display: none;
   }
   .games__img {
     padding-bottom: 85px;
+  }
+  .words {
+    flex-direction: column-reverse;
+  }
+  .words__box {
+    padding-top: 51px;
+  }
+  .words__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .words__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .words__img {
+    padding-top: 64px;
+    padding-bottom: 90px;
   }
 }/*# sourceMappingURL=style.css.map */
